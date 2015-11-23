@@ -1,7 +1,5 @@
 <img src="http://3.bp.blogspot.com/-fKTKY3P8Ie0/U74Ufh1kIhI/AAAAAAAAAdI/TJyapM-vsSo/s1600/InfiniteFlightLogo450x180.png" />
 
-<br>
-
 # Documentation Website
 
 <b>Documentation Pages</b>
