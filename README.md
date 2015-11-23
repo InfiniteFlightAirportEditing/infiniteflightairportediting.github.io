@@ -3,5 +3,6 @@
 # Documentation Website
 
 <b>Documentation Pages</b>
-infiniteflightairportediting.github.io is the documentation website used to
+<br>
+<a href="infiniteflightairportediting.github.io"> infiniteflightairportediting.github.io</a> is the documentation website used to
 represent Infinite Flight Airport Editing outside of the GitHub project itself.
