@@ -66,3 +66,7 @@ nav a {
 .circular {
 	border-radius: 50px;
 }
+#div-bar {
+	color: #999999;
+	border-radius: 10px;
+}
