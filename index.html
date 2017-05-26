@@ -1,302 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/e8c7d9e03e.css">
-    <script src="https://use.fontawesome.com/4efb6a435c.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet' type='text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
-    <link rel="icon" type="image/png" href="imgs/airport-editing.png">
-    <title>Infinite Flight Airport Editing Documentation Site</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #192229;">
-        <div class="container">
-          <div class="navbar-header">
-            <img src="imgs/airport-editing.png" id="logo">
-          </div>
-          <ul class="nav navbar-nav">
-            <li class="navbar-brand text-uppercase"><a style="color: white;">Infinite Flight Airport Editing</a></li>
-          </ul>
-        </div>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+      <title>Infinite Flight Airport Editing</title>
+      <meta name="language" content="en">
+      <meta name="description" content="Got a passion for design, and want to help improve Infinite Flight? Help contribute to airport designs and navigation data here!" />
+      <meta name="keywords" content="Infinite Flight, Airport Editing, Airport Designing, IFAE, Infinite Flight Airport Editing, IF airport editing, airports, editing, IF, X-Plane, WorldEditor, X-Plane WED, WED, Infinite Flight Community" />
+      <meta name="theme-color" content="#192229">
+      <meta name="robots" content="index, follow">
+      <link rel="shortcut icon" type="image/png" href="images/airport-editing.png"/>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script>
+         $(document).ready(function(){
+         $("a").on('click', function(event) {
+         if (this.hash !== "") {
+         event.preventDefault();
+         var hash = this.hash;
+         $('html, body').animate({
+           scrollTop: $(hash).offset().top
+         }, 800, function(){
+           window.location.hash = hash;
+         });
+         }
+         });
+         });
+      </script>
+   </head>
+   <body>
+      <nav class="light-blue lighten-1" role="navigation">
+         <a href="index.html" class="brand-logo"><img src="images/airport-editing.png" class="logo-img" alt=""></a>
+         <ul class="right hide-on-med-and-down">
+            <li><a href="#getting-started">Getting started</a></li>
+            <li><a href="#video-tutorials">Video tutorials</a></li>
+            <li><a href="#written-tutorials">Written tutorials</a></li>
+            <li><a href="#team">Our Team</a></li>
+         </ul>
+         <ul id="nav-mobile" class="side-nav">
+            <li><a class="subheader">Infinite Flight Airport Editing</a></li>
+            <li>
+               <div class="divider"></div>
+            </li>
+            <li><a href="#getting-started">Getting started</a></li>
+            <li><a href="#video-tutorials">Video tutorials</a></li>
+            <li><a href="#written-tutorials">Written tutorials</a></li>
+            <li><a href="#team">Our Team</a></li>
+         </ul>
+         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+         </div>
       </nav>
-    </header>
-    <section id="top">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p>Glad to have you here! If you enjoy aviation, designing, and want to make Infinite Flight better, then you've come to the right place! Infinite Flight contains many airports worldwide, and our mission is to make sure they are as accurate as possible. We're looking for people to help with creating accurate layouts, with taxiways, taxi lines, ATC frequencies and parking spots.</p>
-          </div>
-        </div>
+      <div class="section no-pad-bot" id="index-banner">
+         <div class="container">
+            <br><br>
+            <img class="responsive-img" src="images/ifae-banner.png">
+            <div class="row center">
+               <h5 class="header col s12 light">Glad to have you here! If you enjoy aviation, designing, and want to make Infinite Flight better, then you've come to the right place! Infinite Flight contains many airports worldwide, and our mission is to make sure they are as accurate as possible. We're looking for people to help with creating accurate layouts, with taxiways, taxi lines, ATC frequencies and parking spots.</h5>
+            </div>
+            <div class="row center">
+               <a href="mailto:airports@liveflightapp.com?subject=Infinite Flight Airport Editing" id="download-button" class="btn-large waves-effect waves-light orange">Join the team</a>
+               <a class="modal-trigger btn-large waves-effect waves-light orange" href="#getting-started">Getting Started</a>
+            </div>
+            <br><br>
+         </div>
       </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2><i class="fa fa-wrench"></i> Getting Started</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/U-hPkX9Rqxs" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
+      <div id="getting-started" class="modal modal-fixed-footer">
+         <div class="modal-content">
+            <h4>Getting Started</h4>
+            <div class="col-md-12">
+               <p>Getting started is very easy. The video under will give you a full, guided, step-by-step guide on how to prepare for editing airports. Here are the steps listed:</p>
+               <p>1. Create a <a href="http://github.com/" target="blank">GitHub account</a>, by entering your details on the GitHub website. Remember these details, they'll come in handly later!</p>
+               <p>2. Direct message one of the airport editing admins on Slack your GitHub username. They'll invite you to the GitHub team. Accept that invite on the GitHub website or in your email. (If you're not a part of the Slack, scroll down to the Slack section to get more information on how to get invited.)</p>
+               <p>3. Download the <a href="https://desktop.github.com" target="blank">GitHub Desktop</a> app.</p>
+               <p>4. Install a copy of X-Plane. Skip this step if you already have a DVD/Steam copy, otherwise you can download the free demo from <a href="http://www.x-plane.com/desktop/try-it/" target="blank">here</a>.</p>
+               <p>5. Install a copy of World Editor from <a href="http://developer.x-plane.com/tools/worldeditor/" target="blank">here</a>.</p>
+               <p>6. Login to the GitHub Desktop app, then tap the "+ button on the top left corner, select the "Clone" tab, and select "Airports". Save this to somewhere you'll remember later.</p>
+               <p>7. Open WorldEditor, and select the folder in which you installed X-Plane to. Create a new scenery package, and call it the name of the airport you want to update.</p>
+               <p>8. A new window should appear. Go to File - Import from apt.dat.</p>
+               <p>9. Find the folder in which you cloned the repo to earlier. Select the airport you want to edit, and import the apt.dat.</p>
+               <p>10. Download <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="blank">Java</a> (skip this if you already have it installed) and <a href="https://wedomaker.wordpress.com/download/" target="blank">WED-O-Maker (or) WEDbing</a>, then run WED-O-Maker/WEDbing and add the path to your X-Plane folder in the top left.</p>
+               <div class="video-container"><iframe width="1280" height="720" src="https://www.youtube.com/embed/U-hPkX9Rqxs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+            </div>
+         </div>
+         <div class="modal-footer">
+            <a class=" modal-action modal-close waves-effect waves-light btn-flat">Close</a>
+         </div>
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p>Getting started is very easy. The video above will give you a full, guided, step-by-step guide on how to prepare for editing airports. Here are the steps listed:</p>
-            <p>1. Create a <a href="http://github.com/" target="blank">GitHub account</a>, by entering your details on the GitHub website. Remember these details, they'll come in handly later!</p>
-            <p>2. Direct message one of the airport editing admins on Slack your GitHub username. They'll invite you to the GitHub team. Accept that invite on the GitHub website or in your email. (If you're not a part of the Slack, scroll down to the Slack section to get more information on how to get invited.)</p>
-            <p>3. Download the <a href="https://desktop.github.com" target="blank">GitHub Desktop</a> app.</p>
-            <p>4. Install a copy of X-Plane. Skip this step if you already have a DVD/Steam copy, otherwise you can download the free demo from <a href="http://www.x-plane.com/desktop/try-it/" target="blank">here</a>.</p>
-            <p>5. Install a copy of World Editor from <a href="http://developer.x-plane.com/tools/worldeditor/" target="blank">here</a>.</p>
-            <p>6. Login to the GitHub Desktop app, then tap the "+ button on the top left corner, select the "Clone" tab, and select "Airports". Save this to somewhere you'll remember later.</p>
-            <p>7. Open WorldEditor, and select the folder in which you installed X-Plane to. Create a new scenery package, and call it the name of the airport you want to update.</p>
-            <p>8. A new window should appear. Go to File - Import from apt.dat.</p>
-            <p>9. Find the folder in which you cloned the repo to earlier. Select the airport you want to edit, and import the apt.dat.</p>
-            <p>10. Download <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="blank">Java</a> (skip this if you already have it installed) and <a href="https://wedomaker.wordpress.com/download/" target="blank">WED-O-Maker (or) WEDbing</a>, then run WED-O-Maker/WEDbing and add the path to your X-Plane folder in the top left.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2><i class="fa fa-pencil"></i> Using WED</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLMlRNmHeyivDv8OLFArflWLt_ZQJWD1oU" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="col-md-6">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/OImt0g9RhsI" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/2_ie0q1c1Kk" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="col-md-6">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Wy6XJAmJH8g" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/I1dgPIfv4BY" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="col-md-6">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/c1qTN3tvDq8" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2><i class="fa fa-file-text"></i> Tutorials</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <p>Placing images in WED by Nik Barbour</p>
-          </div>
-          <div class="col-md-4">
-            <p>Basic Principles by Jonathan Perkins</p>
-          </div>
-          <div class="col-md-4">
-            <p>Airport Editing Checklist</p>
-          </div>     
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-          <a href="https://www.dropbox.com/s/b0rdjmwem3q21t8/guide%20to%20placing%20images%20in%20WED.pdf?dl=0" target="blank"><i class="fa fa-dropbox fa-5x"></i></a>
-          </div>
-          <div class="col-md-4">
-             <a href="https://www.dropbox.com/s/3wwos2fv67iru0u/Infinite%20Flight%20Airport%20Editing%20Basic%20Principles.pdf?dl=1" target="blank"><i class="fa fa-dropbox fa-5x"></i></a>
-          </div>
-          <div class="col-md-4">
-          <a href="https://www.dropbox.com/s/oi49mc3ysfr2hhn/Infinite%20Flight%20Airport%20Editing%20Checklist.pdf?dl=0" target="blank"><i class="fa fa-dropbox fa-5x"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2><i class="fa fa-check"></i> Do's and Don'ts <i class="fa fa-ban"></i></h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <h3><i class="fa fa-check"></i> Do's</h3>
-            <ul>
-              <li>Use accurate imagery for airports.</li>
-              <li>Add taxiways.</li>
-              <li>Add taxiway lines.</li>
-              <li>Add parking spots.</li>
-              <li>Modify runways.</li>
-              <li>Add airport boundaries.</li>
-              <li>Snap vertices.</li>
-              <li>Cut holes for overlapping taxiways.</li>
+         <div class="section">
+            <h4><a id="video-tutorials"></a>Video tutorials</h4>
+            <ul class="collapsible" data-collapsible="accordion">
+               <li>
+                  <div class="collapsible-header"><span class="new badge orange" data-badge-caption="">Featured</span><i class="material-icons">play_circle_filled</i>Getting Started</div>
+                  <div class="collapsible-body">
+                     <div class="video-container"><iframe width="1280" height="720" src="https://www.youtube.com/embed/U-hPkX9Rqxs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+                     <p>Getting started is very easy. The video above will give you a full, guided, step-by-step guide on how to prepare for editing airports. Here are the steps listed:</p>
+                     <p>1. Create a <a href="http://github.com/" target="blank">GitHub account</a>, by entering your details on the GitHub website. Remember these details, they'll come in handly later!</p>
+                     <p>2. Direct message one of the airport editing admins on Slack your GitHub username. They'll invite you to the GitHub team. Accept that invite on the GitHub website or in your email. (If you're not a part of the Slack, scroll down to the Slack section to get more information on how to get invited.)</p>
+                     <p>3. Download the <a href="https://desktop.github.com" target="blank">GitHub Desktop</a> app.</p>
+                     <p>4. Install a copy of X-Plane. Skip this step if you already have a DVD/Steam copy, otherwise you can download the free demo from <a href="http://www.x-plane.com/desktop/try-it/" target="blank">here</a>.</p>
+                     <p>5. Install a copy of World Editor from <a href="http://developer.x-plane.com/tools/worldeditor/" target="blank">here</a>.</p>
+                     <p>6. Login to the GitHub Desktop app, then tap the "+ button on the top left corner, select the "Clone" tab, and select "Airports". Save this to somewhere you'll remember later.</p>
+                     <p>7. Open WorldEditor, and select the folder in which you installed X-Plane to. Create a new scenery package, and call it the name of the airport you want to update.</p>
+                     <p>8. A new window should appear. Go to File - Import from apt.dat.</p>
+                     <p>9. Find the folder in which you cloned the repo to earlier. Select the airport you want to edit, and import the apt.dat.</p>
+                     <p>10. Download <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="blank">Java</a> (skip this if you already have it installed) and <a href="https://wedomaker.wordpress.com/download/" target="blank">WED-O-Maker (or) WEDbing</a>, then run WED-O-Maker/WEDbing and add the path to your X-Plane folder in the top left.</p>
+                  </div>
+               </li>
+               <li>
+                  <div class="collapsible-header"><span class="new badge orange" data-badge-caption="">Featured</span><i class="material-icons">play_circle_filled</i>Complete Airport Editing Tutorial</div>
+                  <div class="collapsible-body">
+                     <div class="video-container"><iframe width="1280" height="720" src="https://www.youtube.com/embed/DJhvvz_fI48?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+                  </div>
+               </li>
+               <li>
+                  <div class="collapsible-header"><i class="material-icons">play_circle_filled</i>GitHub Basics</div>
+                  <div class="collapsible-body">
+                     <div class="video-container"><iframe width="1280" height="720" src="https://www.youtube.com/embed/L417wtnn2Uw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+                  </div>
+               </li>
+               <li>
+                  <div class="collapsible-header"><i class="material-icons">play_circle_filled</i>Basic Curving</div>
+                  <div class="collapsible-body">
+                     <div class="video-container"><iframe width="1280" height="720" src="https://www.youtube.com/embed/dwogDPDx2aE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+                  </div>
+               </li>
+               <li>
+                  <div class="collapsible-header"><i class="material-icons">play_circle_filled</i>Snapping</div>
+                  <div class="collapsible-body">
+                     <div class="video-container"><iframe width="1280" height="720" src="https://www.youtube.com/embed/NdSDzjy5AVw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+                  </div>
+               </li>
+               <li>
+                  <div class="collapsible-header"><i class="material-icons">play_circle_filled</i>SAS Planet</div>
+                  <div class="collapsible-body">
+                     <div class="video-container"><iframe width="1280" height="720" src="https://www.youtube.com/embed/7fjA1V8U7R4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+                  </div>
+               </li>
+               <li>
+                  <div class="collapsible-header"><i class="material-icons">play_circle_filled</i>Creating a Duplicate</div>
+                  <div class="collapsible-body">
+                     <div class="video-container"><iframe width="1280" height="720" src="https://www.youtube.com/embed/I1dgPIfv4BY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+                  </div>
+               </li>
+               <li>
+                  <div class="collapsible-header"><i class="material-icons">play_circle_filled</i>Creating a Curved Taxi Line</div>
+                  <div class="collapsible-body">
+                     <div class="video-container"><iframe width="1280" height="720" src="https://www.youtube.com/embed/I1dgPIfv4BY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+                  </div>
+               </li>
+               <li>
+                  <div class="collapsible-header"><i class="material-icons">play_circle_filled</i>Precision Designing with WED</div>
+                  <div class="collapsible-body">
+                     <div class="video-container"><iframe width="1280" height="720" src="https://www.youtube.com/embed/9VhSNhxkOdA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+                  </div>
+               </li>
+               <li>
+                  <div class="collapsible-header"><span class="new badge orange" data-badge-caption="">Spanish</span><i class="material-icons">play_circle_filled</i>Getting started</div>
+                  <div class="collapsible-body">
+                     <div class="video-container"><iframe width="1280" height="720" src="https://www.youtube.com/embed/8ofEeAO8yHM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+                  </div>
+               </li>
+               <li>
+                  <div class="collapsible-header"><span class="new badge orange" data-badge-caption="">Spanish</span><i class="material-icons">play_circle_filled</i>Import images in WED with SAS Planet</div>
+                  <div class="collapsible-body">
+                     <div class="video-container"><iframe width="1280" height="720" src="https://www.youtube.com/embed/_1AJmzM1-P8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+                  </div>
+               </li>
             </ul>
-          </div>
-          <div class="col-md-6">
-            <h3><i class="fa fa-ban"></i> Don'ts</h3>
-            <ul>
-              <li>Add runway markings with taxiway lines (this includes runway numbers, blastpad arrows, etc.).</li>
-              <li>Forget to include a boundary.</li>
-              <li>Make up an airport - it <strong>HAS</strong> to be a real airport.</li>
-            </ul>
-          </div>
-        </div>
+         </div>
       </div>
-    </section>
-    <section>
+      <div class="row">
+         <div class="container">
+            <div class="col s12 m6">
+               <div class="icon-block">
+                  <h2 class="center light-blue-text"><i class="material-icons">thumb_up</i></h2>
+                  <h5 class="center">Do's</h5>
+                  <p class="light">
+                     Use accurate imagery for airports.<br/>
+                     Add taxiways.<br/>
+                     Add taxiway lines.<br/>
+                     Add parking spots.<br/>
+                     Modify runways.<br/>
+                     Add airport boundaries.<br/>
+                     Snap vertices.<br/>
+                     Cut holes for overlapping taxiways.
+                  </p>
+               </div>
+            </div>
+            <div class="col s12 m6">
+               <div class="icon-block">
+                  <h2 class="center light-blue-text"><i class="material-icons">thumb_down</i></h2>
+                  <h5 class="center">Don'ts</h5>
+                  <p class="light">
+                     Add runway markings with taxiway lines (this includes runway numbers, blastpad arrows, etc.).<br/>
+                     Forget to include a boundary.<br/>
+                     Make up an airport - it <strong>HAS</strong> to be a real airport.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2><i class="fa fa-envelope"></i> Sending Changes</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <ul>
-              <li>In WorldEditor, go to File - Export as apt.dat.</li>
-              <li>Save the file in the corresponding folder for the airport.</li>
-              <li>Open up an email client (such as Gmail).</li>
-              <li>Send an email to <code>airports@liveflightapp.com</code>.</li>
-            </ul>
-          </div>
-        </div>
+         <h4><a id="written-tutorials"></a>Written tutorials</h4>
+         <div class="collection">
+            <a href="https://www.dropbox.com/s/b0rdjmwem3q21t8/guide%20to%20placing%20images%20in%20WED.pdf?dl=1" class="collection-item"><i class="material-icons left">library_books</i>Placing images in WED <i>by Nik Barbour</i></a>
+            <a href="https://www.dropbox.com/s/3wwos2fv67iru0u/Infinite%20Flight%20Airport%20Editing%20Basic%20Principles.pdf?dl=1" class="collection-item"><i class="material-icons left">library_books</i>Basic Principles <i>by Jonathan Perkins</i></a>
+            <a href="https://www.dropbox.com/s/oi49mc3ysfr2hhn/Infinite%20Flight%20Airport%20Editing%20Checklist.pdf?dl=1" class="collection-item"><i class="material-icons left">library_books</i>Airport Editing Checklist</a>
+         </div>
       </div>
-    </section>
-    <section>
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-          <h2><i class="fa fa-slack"></i> Slack</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <p>Join our Slack group to discuss with other editors! Let us know your email address via <code>airports@liveflightapp.com</code>.</p>
-          </div>
-        </div>
+         <div class="section">
+            <!--   Icon Section   -->
+            <div class="row">
+               <div class="col s12 m4">
+                  <div class="icon-block">
+                     <h2 class="center light-blue-text"><i class="material-icons">email</i></h2>
+                     <h5 class="center">Sending changes</h5>
+                     <p class="light">In WorldEditor, go to File - Export as apt.dat. Save the file in the corresponding folder for the airport. Open up an email client (such as Gmail). Send an email to <code>airports@liveflightapp.com</code>.</p>
+                  </div>
+               </div>
+               <div class="col s12 m4">
+                  <div class="icon-block">
+                     <h2 class="center light-blue-text"><i class="material-icons">forum</i></h2>
+                     <h5 class="center">Slack</h5>
+                     <p class="light">Join our Slack group to discuss with other editors! Let us know your email address via <code>airports@liveflightapp.com</code>. You'll also gain access to slash commands like <code>/i-need-help</code>, <code>/wedbing</code> or <code>/airport-info</code>, which will provide you quick access to essential information.</p>
+                  </div>
+               </div>
+               <div class="col s12 m4">
+                  <div class="icon-block">
+                     <h2 class="center light-blue-text"><i class="material-icons">assignment</i></h2>
+                     <h5 class="center">License</h5>
+                     <p class="light">Infinite Flight Airport Editing data is licensed under the <a href="http://www.gnu.org/licenses/gpl-2.0.txt">GNU General Public License.</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-    </section>
-    <hr>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2><i class="fa fa-users"></i> The Team</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <a href="https://community.infinite-flight.com/users/cameron/activity"><img src="imgs/cam.png" class="circular team"></a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://community.infinite-flight.com/users/jonathan/activity"><img src="imgs/jonathan.png" class="circular team"></a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://community.infinite-flight.com/users/davidcutler/activity"><img src="imgs/david.png" class="circular team"></a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <p>Cameron Carmichael Alonso</p>
-          </div>
-          <div class="col-md-4">
-            <p>Jonathan Perkins</p>
-          </div>
-          <div class="col-md-4">
-            <p>David Cutler</p>
-          </div>
-        </div>
-        <div class="row" style="margin-top: 40px;">
-          <div class="col-md-4">
-            <a href="https://community.infinite-flight.com/users/kilt_mchaggis/activity"><img src="imgs/kilt.png" class="circular team"></a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://community.infinite-flight.com/users/henrik/activity"><img src="imgs/henrik.png" class="circular team"></a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://community.infinite-flight.com/users/dush19/activity"><img src="imgs/dush.png" class="circular team"></a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <p>Tom "Kilt McHaggis" Muir</p>
-          </div>
-          <div class="col-md-4">
-            <p>Henrik Berg</p>
-          </div>
-          <div class="col-md-4">
-            <p>Dushyanth</p>
-          </div>
-        </div>
-        <div class="row" style="margin-top: 40px;">
-            <center>
-                <a href="https://community.infinite-flight.com/u/moritz_babl/activity"><img src="imgs/moritz.png" class="circular team"></a>
-            </center>
-          </div>
-        </div>
-            <p style="text-align:center">Moritz Babl</p>
-        </div>
+      <div class="section scrollspy" id="team">
+         <div class="container">
+            <h4 class="header text_b"><a id="team"></a> Our Team </h4>
+            <div class="row">
+               <div class="col s12 m6 l3">
+                  <div class="card card-avatar">
+                     <div class="waves-effect waves-block waves-light">
+                        <a href="https://community.infinite-flight.com/users/cameron/activity"><img class="activator" src="images/cam.png"></a>
+                     </div>
+                     <div class="card-content">
+                        <a href="https://community.infinite-flight.com/users/cameron/activity"><span class="card-title activator grey-text text-darken-4">Cameron Carmichael Alonso<br/></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col s12 m6 l3">
+                  <div class="card card-avatar">
+                     <div class="waves-effect waves-block waves-light">
+                        <a href="https://community.infinite-flight.com/users/kilt_mchaggis/activity"><img class="activator" src="images/kilt.png"></a>
+                     </div>
+                     <div class="card-content">
+                        <a href="https://community.infinite-flight.com/users/kilt_mchaggis/activity"><span class="card-title activator grey-text text-darken-4">Tom "Kilt McHaggis" Muir<br/></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col s12 m6 l3">
+                  <div class="card card-avatar">
+                     <div class="waves-effect waves-block waves-light">
+                        <a href="https://community.infinite-flight.com/users/dush19/activity"><img class="activator" src="images/dush.png"></a>
+                     </div>
+                     <div class="card-content">
+                        <a href="https://community.infinite-flight.com/users/dush19/activity"><span class="card-title activator grey-text text-darken-4">Dushyanth<br/></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col s12 m6 l3">
+                  <div class="card card-avatar">
+                     <div class="waves-effect waves-block waves-light">
+                        <a href="https://community.infinite-flight.com/u/moritz_babl/activity"><img class="activator" src="images/moritz.png"></a>
+                     </div>
+                     <div class="card-content">
+                        <a href="https://community.infinite-flight.com/u/moritz_babl/activity"><span class="card-title activator grey-text text-darken-4">Moritz Babl<br/></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col s12 m6 l3">
+                  <div class="card card-avatar">
+                     <div class="waves-effect waves-block waves-light">
+                        <a href="https://community.infinite-flight.com/users/henrik/activity"><img class="activator" src="images/henrik.png"></a>
+                     </div>
+                     <div class="card-content">
+                        <a href="https://community.infinite-flight.com/users/henrik/activity"><span class="card-title activator grey-text text-darken-4">Henrik Berg<br/></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col s12 m6 l3">
+                  <div class="card card-avatar">
+                     <div class="waves-effect waves-block waves-light">
+                        <a href="https://community.infinite-flight.com/users/davidcutler/activity"><img class="activator" src="images/david.png"></a>
+                     </div>
+                     <div class="card-content">
+                        <a href="https://community.infinite-flight.com/users/davidcutler/activity"><span class="card-title activator grey-text text-darken-4">David Cutler<br/></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col s12 m6 l3">
+                  <div class="card card-avatar">
+                     <div class="waves-effect waves-block waves-light">
+                        <a href="https://community.infinite-flight.com/users/jonathan/activity"><img class="activator" src="images/jonathan.png"></a>
+                     </div>
+                     <div class="card-content">
+                        <a href="https://community.infinite-flight.com/users/jonathan/activity"><span class="card-title activator grey-text text-darken-4">Jonathan Perkins<br/></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2><i class="fa fa-folder"></i> License</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <p>Infinite Flight Airport Editing data is licensed under the <a href="http://www.gnu.org/licenses/gpl-2.0.txt">GNU General Public License</a>.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <p class="vcenter">Infinite Flight Airport Editing is maintained by Cameron Carmichael Alonso, Jonathan Perkins, and David Cutler.</p>
-          </div>
-          <div class="col-md-8">
-            <h4>Repositories</h4>
-            <ul class="list-inline">
-              <li><a href="https://github.com/InfiniteFlightAirportEditing/Airports">Airports</a></li>
-              <li><a href="https://github.com/InfiniteFlightAirportEditing/Navigation">Navigation</a></li>
-              <li><a href="https://github.com/InfiniteFlightAirportEditing/infiniteflightairportediting.github.io">Documentation Site</a></li>
-              <li><a href="https://github.com/InfiniteFlightAirportEditing/xptools">X-Plane Scenery Tools</a></li>
-              <li><a href="https://github.com/InfiniteFlightAirportEditing/Automation">Automation</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  
-    ga('create', 'UA-78962159-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+      <footer class="page-footer orange">
+         <div class="container">
+            <div class="row">
+               <div class="col l6 s12">
+                  <h5 class="white-text">Infinite Flight Airport Editing</h5>
+                  <p class="grey-text text-lighten-4">Infinite Flight Airport Editing is maintained by Cameron Carmichael Alonso, Jonathan Perkins, and David Cutler.</p>
+               </div>
+               <div class="col l3 s12">
+                  <h5 class="white-text">Repositories</h5>
+                  <ul>
+                     <li><a class="white-text" href="https://github.com/InfiniteFlightAirportEditing/Airports">Airports</a></li>
+                     <li><a class="white-text" href="https://github.com/InfiniteFlightAirportEditing/Navigation">Navigation</a></li>
+                     <li><a class="white-text" href="https://github.com/InfiniteFlightAirportEditing/infiniteflightairportediting.github.io">Documentation Site</a></li>
+                     <li><a class="white-text" href="https://github.com/InfiniteFlightAirportEditing/xptools">X-Plane Scenery Tools</a></li>
+                     <li><a class="white-text" href="https://github.com/InfiniteFlightAirportEditing/Automation">Automation</a></li>
+                  </ul>
+               </div>
+               <div class="col l3 s12">
+                  <h5 class="white-text">Connect</h5>
+                  <ul>
+                     <li><a class="white-text" href="https://github.com/InfiniteFlightAirportEditing">GitHub</a></li>
+                     <li><a class="white-text" href="https://www.youtube.com/channel/UCwkaY8hNDZEb5NrKXmwRkyA">YouTube</a></li>
+                     <li><a class="white-text" href="https://www.instagram.com/airportediting/">Instagram</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="footer-copyright">
+            <div class="container">
+               © Infinite Flight Airport Editing, 2017
+            </div>
+         </div>
+      </footer>
+      <script>
+         $(document).ready(function() {
+         $('.modal').modal();
+         });
+      </script>
+      <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+         
+         ga('create', 'UA-78962159-1', 'auto');
+         ga('send', 'pageview');
+      </script>
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="js/materialize.js"></script>
+      <script src="js/init.js"></script>
+   </body>
 </html>
