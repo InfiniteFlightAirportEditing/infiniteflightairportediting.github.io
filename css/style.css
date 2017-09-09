@@ -1,11 +1,3 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
 .icon-block {
   padding: 0 15px;
 }
@@ -76,7 +68,28 @@ img {
     border: 0;
 }
 
-
 .waves-block {
     display: block;
+}
+
+.input-field label {
+    color: #192229;
+}
+
+.input-field input[type=text]:focus + label {
+    color: #192229;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #192229;
+    box-shadow: 0 1px 0 0 #192229;
+}
+
+.input-field input[type=email]:focus + label {
+    color: #192229;
+}
+
+.input-field input[type=email]:focus {
+    border-bottom: 1px solid #192229;
+    box-shadow: 0 1px 0 0 #192229;
 }
