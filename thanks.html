@@ -3,7 +3,7 @@
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1.0" name="viewport">
-	<title>Join us! - Infinite Flight Airport Editing</title>
+	<title>Thanks for your application - Infinite Flight Airport Editing</title>
 	<meta content="en" name="language">
 	<meta content="Got a passion for design, and want to help improve Infinite Flight? Help contribute to airport designs and navigation data here!" name="description">
 	<meta content="Infinite Flight, Airport Editing, Airport Designing, IFAE, Infinite Flight Airport Editing, IF airport editing, airports, editing, IF, X-Plane, WorldEditor, X-Plane WED, WED, Infinite Flight Community" name="keywords">
@@ -30,6 +30,23 @@
 	        });
 	        });
 	</script>
+    <script type="text/javascript">
+            window.onload=function() {
+            function countdown() {
+            if ( typeof countdown.counter == 'undefined' ) {
+            countdown.counter = 20;
+            }
+            if(countdown.counter > 0) {
+	        document.getElementById('count').innerHTML = countdown.counter--;
+            setTimeout(countdown, 1000);
+            }
+            else {
+            location.href = 'http://airportediting.com/';
+            }
+            }
+            countdown();
+            };
+    </script>
 </head>
 <body>
 	<nav class="light-blue lighten-1" role="navigation">
@@ -69,43 +86,16 @@
 			</li>
 		</ul><a class="button-collapse" data-activates="nav-mobile" href="#"><i class="material-icons">menu</i></a> 
 	</nav>
-	<div class="section no-pad-bot" id="index-banner">
-		<div class="container">
-			<br>
-			<br>
-			<img class="responsive-img" src="images/ifae-banner.png">
-			<div class="row center">
-				<h5 class="header col s12 light"><a id="waypoints"></a>Glad to have you here! If you enjoy aviation, designing, and want to make Infinite Flight better, then you've come to the right place! Infinite Flight contains many airports worldwide, and our mission is to make sure they are as accurate as possible. We're looking for people to help with creating accurate layouts with taxiways, taxi lines, ATC frequencies, and parking spots.</h5>
-			</div>
-			<br>
-		</div>
-	</div>
+
 	<div class="container">
-		<div class="section">
-			<form action="https://www.enformed.io/ecnfbf7h" class="col s12" method="post">
-				<div class="row">
-					<div class="input-field col s6">
-						<input id="first_name" name="First name" type="text" required> <label for="first_name">First name</label>
-					</div>
-					<div class="input-field col s6">
-						<input id="last_name" name="Last name" type="text" required> <label for="last_name">Last name</label>
-					</div>
-					<div class="input-field col s6">
-						<input id="community_username" name="Community username" type="text"> <label for="community_username">Community username</label>
-					</div>
-					<div class="input-field col s6">
-						<input id="github_username" name="GitHub username" type="text"> <label for="github_username">GitHub username</label>
-					</div>
-					<div class="input-field col s12">
-						<input id="email" name="Email" type="email" required> <label for="email">Email</label>
-                        <input type="hidden" name="*honeypot" />
-					</div>
-					<div class="row center">
-						<a class="modal-trigger btn-large waves-effect waves-light orange" href="/index.html">Back to home</a> <button class="btn-large waves-effect waves-light orange" name="action" type="submit">Submit <i class="material-icons right">send</i> <input type="submit" value=""> <input name="*formname" type="hidden" value="New application"> <input name="*reply" type="hidden" value="email"> <input name="*subject" type="hidden" value="New application"> <input name="*redirect" type="hidden" value="http://airportediting.com/thanks.html"> </button>
-					</div>
-				</div>
-			</form>
-		</div>
+        <br>
+		<div class="row center">
+            <i class="large material-icons">thumb_up</i>
+            <h3>Thanks for your application.</h3>
+            <h5 class="header col s12 light">Your application has been sent and will be reviewed by a manager shortly. In the mean time, please check out our tutorials on our <a href="https://www.youtube.com/channel/UCwkaY8hNDZEb5NrKXmwRkyA">YouTube channel</a> or our getting started tutorial on <a href="http://airportediting.com/">our homepage</a>. We're looking forward to work with you very soon!
+            <br><br><br>
+            You will be redirected in <span id="count"></span> seconds.</h5>
+        </div>
 	</div>
 	<footer class="page-footer orange">
 		<div class="container">
