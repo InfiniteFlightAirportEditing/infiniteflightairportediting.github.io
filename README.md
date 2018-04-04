@@ -4,5 +4,5 @@
 
 <b>Documentation Pages</b>
 <br>
-<a href="http://airportediting.com/">airportediting.com</a> is the documentation website used to
+<a href="https://airportediting.com/">airportediting.com</a> is the documentation website used to
 represent Infinite Flight Airport Editing outside of the GitHub project itself.
