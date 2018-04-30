@@ -93,6 +93,7 @@ img {
     border-bottom: 1px solid #192229;
     box-shadow: 0 1px 0 0 #192229;
 }
+
 .light-blue.lighten-1 {
     padding-left: constant(safe-area-inset-left);
     padding-right: constant(safe-area-inset-right);
