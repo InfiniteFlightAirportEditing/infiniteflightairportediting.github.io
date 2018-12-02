@@ -88,7 +88,9 @@
 	</div>
 	<div class="container">
 		<div class="section">
-			<form action="https://www.enformed.io/3ao0ztm4" class="col s12" method="post">
+			<form action="https://simple-form.com/contact@airportediting.com" method="POST" class="col s12">
+                <input type="hidden" name="redirectURL" value="https://airportediting.com/thanks"/>
+                <input type="text" name="subject" value="Welcome to Infinite Flight Airport Editing!" style="display:none"/>
 				<div class="row">
 					<div class="input-field col s6">
 						<input id="first_name" name="First name" type="text" required> <label for="first_name">First name</label>
@@ -103,12 +105,10 @@
 						<input id="github_username" name="GitHub username" type="text"> <label for="github_username">GitHub username</label>
 					</div>
 					<div class="input-field col s12">
-						<input id="email" name="email" type="email" required> <label for="email">Email</label>
-                        <input type="hidden" name="*reply" value="email" />
-                        <input type="hidden" name="*honeypot" />
+						<input id="email" name="replyTo" type="email" required> <label for="email">Email</label>
 					</div>
 					<div class="row center">
-						<a class="modal-trigger btn-large waves-effect waves-light orange" href="/">Back to home</a> <button class="btn-large waves-effect waves-light orange" name="action" type="submit">Submit <i class="material-icons right">send</i> <input type="submit" value=""> <input name="*formname" type="hidden" value="New application"> <input name="*reply" type="hidden" value="email"> <input name="*subject" type="hidden" value="Welcome to Infinite Flight Airport Editing!"> <input name="*redirect" type="hidden" value="https://airportediting.com/thanks"></button>
+						<a class="modal-trigger btn-large waves-effect waves-light orange" href="/">Back to home</a> <button class="btn-large waves-effect waves-light orange" type="submit">Submit <i class="material-icons right">send</i> <input type="submit" value=""></button>
 					</div>
 				</div>
 			</form>
